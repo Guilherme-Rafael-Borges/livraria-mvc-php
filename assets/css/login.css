@@ -1,0 +1,186 @@
+/* Estilos gerais */
+body {
+  background-color: #00A9A5;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.card {
+  width: 90%;
+  max-width: 500px; /* Adaptado para uma única coluna */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.333);
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 30px;
+}
+
+/* Seção de login */
+.login-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00A9A5;
+}
+
+.login-section p {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Formulário */
+.form-control {
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Botões */
+.btn-primary {
+  border-radius: 30px;
+  background-color: #00A9A5;
+  border: none;
+  padding: 10px 20px;
+  color: white; /* Garante a legibilidade do texto */
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #007E79;
+  transform: scale(1.05); /* Efeito de leve aumento no hover */
+}
+
+.btn-primary:active {
+  background-color: #005F5B; /* Cor mais escura ao clicar */
+  transform: scale(0.95); /* Leve redução no clique */
+}
+
+/* Ícones sociais */
+.social-icons a {
+  color: #00A9A5;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007E79;
+}
+
+.social-icons p {
+  color: #555;
+  font-size: 16px;
+}
+
+.login-section a {
+  color: #00A9A5;
+  text-decoration: none;
+}
+
+.login-section a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis (até 576px) */
+@media (max-width: 576px) {
+  .card {
+    padding: 30px 20px; /* Menos padding em telas menores */
+  }
+
+  .login-section h2 {
+    font-size: 24px; /* Tamanho de fonte menor */
+  }
+
+  .login-section p {
+    font-size: 14px; /* Texto um pouco menor */
+  }
+
+  .form-control {
+    font-size: 14px; /* Fontes menores em campos de formulário */
+  }
+
+  .btn-primary {
+    padding: 12px 25px; /* Botões um pouco maiores */
+    font-size: 14px; /* Tamanho de fonte menor nos botões */
+  }
+
+  .social-icons a {
+    font-size: 20px; /* Ícones sociais menores */
+  }
+}
+
+/* Para dispositivos de tablet (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card {
+    padding: 40px 25px; /* Ajuste de padding para telas médias */
+  }
+
+  .login-section h2 {
+    font-size: 26px; /* Tamanho de fonte ajustado para tablets */
+  }
+
+  .login-section p {
+    font-size: 15px; /* Texto ajustado para tablets */
+  }
+
+  .form-control {
+    font-size: 15px; /* Ajuste na fonte dos campos de formulário */
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .social-icons a {
+    font-size: 22px; /* Ajuste no tamanho dos ícones sociais */
+  }
+}
+
+/* Para desktops maiores (acima de 768px) */
+@media (min-width: 769px) {
+  .card {
+    padding: 50px 30px; /* Padding padrão para desktops */
+  }
+
+  .login-section h2 {
+    font-size: 28px; /* Fonte maior em telas grandes */
+  }
+
+  .login-section p {
+    font-size: 16px; /* Fonte padrão */
+  }
+
+  .form-control {
+    font-size: 16px; /* Fonte maior nos campos de formulário */
+  }
+
+  .btn-primary {
+    padding: 15px 30px; /* Botões maiores em telas grandes */
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Ícones sociais maiores */
+  }
+}

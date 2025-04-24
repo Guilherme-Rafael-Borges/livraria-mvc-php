@@ -1,0 +1,246 @@
+/* Cores e fontes */
+:root {
+    --primary-color: #00A9A5;
+    --hover-color: #007E79;
+    --light-color: #fff;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* Card principal */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.819);
+    overflow: hidden;
+    padding: 20px;
+    min-height: 500px; /* Define altura mínima proporcional */
+    gap: 20px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    /* Imagem responsiva */
+    .card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Imagem */
+.card img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Conteúdo do cartão */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    color: var(--text-color);
+}
+
+/* Título do livro */
+.card-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto descritivo */
+.card-text {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Preço */
+.card .fw-bold {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    background-color: #3e8e41; /* Cor mais escura ao clicar */
+    transform: scale(0.95); /* Leve redução no clique */
+}
+
+.btn-outline-light {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--hover-color);
+    color: var(--light-color);
+    border-color: var(--hover-color);
+}
+
+/* Input */
+.form-control {
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 169, 165, 0.5);
+}
+
+/* Responsividade dos botões */
+.d-flex {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Calcular Frete */
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group .btn {
+    border-radius: 30px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis (até 576px) */
+@media (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card .fw-bold {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .btn-outline-light {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+/* Para dispositivos de tablet (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card img {
+        max-width: 50%;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    .card .fw-bold {
+        font-size: 1.6rem;
+    }
+
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .btn-outline-light {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+}

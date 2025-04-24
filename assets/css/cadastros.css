@@ -1,0 +1,190 @@
+/* Estilos gerais */
+body {
+  background-color: #00A9A5;
+  font-family: 'Arial', sans-serif;
+}
+
+.letra{
+  color:#00A9A5;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 90%;
+  max-width: 9999px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Seção da esquerda */
+.left-section {
+  background-color: #00A9A5; /* Cor atualizada */
+  color: white;
+  text-align: center;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%; /* A seção esquerda ocupa 50% da largura */
+}
+
+.left-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.left-section p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* Botões */
+.btn-primary {
+  border-radius: 30px;
+  background-color: #00A9A5;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #007E79;
+}
+
+/* Seção da direita */
+.right-section {
+  padding: 50px 30px;
+  background-color: white;
+  width: 50%; /* A seção direita ocupa 50% da largura */
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.social-icons a {
+  color: #00A9A5;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007E79;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos móveis (até 576px) */
+@media (max-width: 576px) {
+  .card {
+    flex-direction: column; /* Seção de login e cadastro em coluna em telas pequenas */
+  }
+
+  .left-section, .right-section {
+    width: 100%; /* Ambos os lados ocupam 100% da largura */
+    padding: 30px 20px; /* Reduz o padding para melhor ajuste em telas pequenas */
+  }
+
+  .left-section h2 {
+    font-size: 24px; /* Tamanho de fonte menor para se ajustar em telas menores */
+  }
+
+  .left-section p {
+    font-size: 14px; /* Texto menor para maior legibilidade */
+  }
+
+  .btn-primary {
+    padding: 12px 25px; /* Botão maior para facilitar o toque em telas pequenas */
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-size: 14px; /* Fontes menores nos campos de formulário */
+  }
+
+  .social-icons a {
+    font-size: 20px; /* Ícones sociais menores em telas pequenas */
+  }
+}
+
+/* Para dispositivos de tablet (de 577px a 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card {
+    flex-direction: row; /* Mantém a disposição em duas colunas para tablets */
+  }
+
+  .left-section, .right-section {
+    width: 50%; /* Cada seção ocupa metade da largura da tela */
+    padding: 40px 25px;
+  }
+
+  .left-section h2 {
+    font-size: 26px;
+  }
+
+  .left-section p {
+    font-size: 15px;
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .form-control {
+    font-size: 15px;
+  }
+
+  .social-icons a {
+    font-size: 22px;
+  }
+}
+
+/* Para dispositivos de desktop maiores (acima de 768px) */
+@media (min-width: 769px) {
+  .card {
+    flex-direction: row; /* Para telas maiores, mantém as seções lado a lado */
+  }
+
+  .left-section, .right-section {
+    width: 50%; /* Cada seção ocupa metade da tela */
+    padding: 50px 30px;
+  }
+
+  .left-section h2 {
+    font-size: 28px; /* Tamanho de fonte padrão para desktops */
+  }
+
+  .left-section p {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    padding: 15px 30px; /* Botões maiores em telas grandes */
+    font-size: 16px;
+  }
+
+  .form-control {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Ícones sociais maiores em telas grandes */
+  }
+}

@@ -1,0 +1,311 @@
+/* Custom Styles */
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    background-color: #00A9A5;
+    border-radius: 15px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap; /* Adicionado para permitir que o conteúdo se ajuste em telas pequenas */
+}
+
+.logo h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 15px;
+    flex-grow: 1;
+    outline: none;
+    
+}
+    .search-bar button {
+        background: none;
+        border: none;
+        color: #00A9A5;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: transform 0.3s ease, z-index 0s linear; /* Animação de transformação e transição de z-index */
+    }
+    
+    .search-bar button:hover {
+        transform: scale(1.1); /* Aumenta o tamanho da lupa */
+        z-index: 1; /* Coloca a lupa acima dos outros elementos */
+    }
+    
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FF3D57;
+}
+
+button.btn-outline-light {
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+button.btn-outline-light:hover {
+    background-color: white;
+    color: #00A9A5;
+}
+
+/* Catálogo de livros */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cards com tamanho uniforme */
+.book-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    width: 200px;
+    min-height: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-item h3 {
+    font-size: 1.2em;
+    color: #3b3f6b;
+    margin: 10px 0;
+}
+
+.book-item p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.451);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    align-self: center;
+    margin-top: auto;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+}
+
+header .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Adicionado para permitir a adaptação em telas pequenas */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo .logo-x {
+    color: red;
+    font-weight: bold;
+}
+
+header .logo .logo-text {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Formulário de busca */
+.search-form {
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 30px;
+    background-image: url('https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f50e.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 20px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-form button:hover {
+    transform: scale(1.05);
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon img {
+    width: 30px;
+}
+
+/* Barra de navegação */
+header .header-bottom nav {
+    margin-top: 10px;
+}
+
+header .header-bottom nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+header .header-bottom nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+header .header-bottom nav a:hover {
+    color: #ffda79;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .books {
+        gap: 15px;
+    }
+
+    .book-item {
+        width: 100%;
+        max-width: 300px;
+        min-height: 350px;
+    }
+
+    .logo h4 {
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        font-size: 3.5vw;
+    }
+
+    .search-form {
+        max-width: 90%;
+    }
+
+    header .header-bottom nav ul {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    header .header-bottom nav a {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    header .logo {
+        font-size: 4.5vw;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input[type="text"] {
+        padding-left: 10px;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+    header .header-bottom nav a {
+        font-size: 3.5vw;
+    }
+}
