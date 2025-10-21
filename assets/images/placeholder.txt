@@ -1,0 +1,3 @@
+# Arquivo de imagem de exemplo
+# Este é um placeholder para as imagens dos livros
+# Em um ambiente real, você substituiria por imagens reais dos livros
